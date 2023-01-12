@@ -1,0 +1,19 @@
+{
+  "name": "portfolio_nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "export SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && next start"
+  },
+  "dependencies": {
+    "antd": "^5.0.4",
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.3.0",
+    "styled-normalize": "^8.0.7"
+  }
+}
