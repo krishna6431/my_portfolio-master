@@ -1,14 +1,20 @@
 {
   "name": "portfolio_nextjs",
+  "main": "server.js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "export SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && next build",
-    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && next start"
+    "dev": "next dev",
+    "build": "next build",
+    "out": "next build && next export",
+    "deploy2": "cross-env NODE_ENV=production firebase deploy --only functions,hosting",
+    "deploy": "firebase deploy --only hosting",
+    "start": "next start"
   },
   "dependencies": {
     "antd": "^5.0.4",
+    "cross-env": "^7.0.3",
+    "firebase-functions": "^4.1.1",
     "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
